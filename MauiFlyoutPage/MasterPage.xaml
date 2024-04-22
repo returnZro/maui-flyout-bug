@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyoutPageSample.MasterPage"
+             Padding="16,48,16,0"
+             Title="MasterPage"
+             BackgroundColor="CornflowerBlue"
+             IconImageSource="menu.png">
+    <VerticalStackLayout Spacing="5">
+        <Button Text="custom back button" Clicked="Button_OnClicked"/>
+        <Label Text="This is master page"/>
+        <Label Text="click back to go back to previous page in stack"/>
+    </VerticalStackLayout>
+</ContentPage>

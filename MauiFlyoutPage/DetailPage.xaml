@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlyoutPageSample.DetailPage"
+             Padding="16,48,16,0">
+    <NavigationPage.TitleView>
+        <Label Text="Detail" 
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               TextColor="White"/>
+    </NavigationPage.TitleView>
+    <AbsoluteLayout>
+        <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
+              AbsoluteLayout.LayoutFlags="All"
+              RowSpacing="20"
+              RowDefinitions="Auto, Auto, Auto, Auto">
+            <Label Grid.Row="0" Text="This is a detail page"/>
+            <Label Grid.Row="1"
+                   FontSize="20"
+                   TextColor="Red"
+                   Text="Droid Issue #1: Notice that iOS displays `IconImageSource` declared in MasterPage while `Android` displays a back button. Swipe to open the flyout and notice that it opens under the nav bar"/>
+            <Button Grid.Row="2" Text="Push a page to main navigation stack" Clicked="PushPage_OnClicked"/>
+            <Button Grid.Row="3" Text="Push a modal to main navigation stack" Clicked="PushModal_OnClicked"/>
+        </Grid>
+    </AbsoluteLayout>
+</ContentPage>
