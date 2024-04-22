@@ -1,4 +1,4 @@
-#### MAUI FlyoutPage Issue in Android
+#### MAUI FlyoutPage Issues in Android
 
 XForms supports having the Flyout page as a non-root page of the app. And we can push any content page on top of Flyout page via main navigation stack (not flyout detail's navigation stack).
 In Maui, iOS works similar to XF and no issues. FlyoutPage is broken in MAUI Android and breaks backward compatibility for XF.
@@ -6,7 +6,7 @@ In Maui, iOS works similar to XF and no issues. FlyoutPage is broken in MAUI And
 *Issue #1:*
   IconImageSource is not displayed on the detail of the Flyout in Android. Instead, a navigation back button is displayed and the TitleView defined on the detail page is ignored.
 
-  *Issue #2:*
+*Issue #2:*
   Consider the following navigation stack:
 ```
   [0] - MainPage (A Navigation page)
