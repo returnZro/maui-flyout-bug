@@ -11,16 +11,6 @@ namespace XFFlyoutPage
         {
             InitializeComponent ();
         }
-
-        private void PushPage_OnClicked(object sender, EventArgs e)
-        {
-            Application.Current?.MainPage?.Navigation.PushAsync(new ContentToPush());
-        }
-
-        private void PushModal_OnClicked(object sender, EventArgs e)
-        {
-            Application.Current?.MainPage?.Navigation.PushModalAsync(new ContentToPush());
-        }
     }
 }
 
