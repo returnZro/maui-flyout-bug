@@ -12,7 +12,7 @@
                VerticalTextAlignment="Center"
                TextColor="White"/>
     </NavigationPage.TitleView>
-    <AbsoluteLayout>
+    <AbsoluteLayout Padding="0,48,0,0">
         <Grid AbsoluteLayout.LayoutBounds="0,0,1,1"
               AbsoluteLayout.LayoutFlags="All"
               RowSpacing="20"
@@ -22,6 +22,8 @@
                    FontSize="20"
                    TextColor="Green"
                    Text="Notice iOS and Droid behaves the same way in XF; IconImageSource is displayed correctly and flyout is presented above the nav bar"/>
+            <Button Grid.Row="2" Text="Push a page to main navigation stack" Clicked="PushPage_OnClicked"/>
+            <Button Grid.Row="3" Text="Push a modal to main navigation stack" Clicked="PushModal_OnClicked"/>
         </Grid>
     </AbsoluteLayout>
 </ContentPage>
