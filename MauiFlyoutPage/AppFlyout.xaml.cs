@@ -10,5 +10,9 @@ public partial class AppFlyout : FlyoutPage
 		var detail = new DetailPage();
 		Flyout = master; // content page
 		Detail = new NavigationPage(detail); // navigation page
+  		if (DeviceInfo.Idiom == DeviceIdiom.Tablet)
+	        {
+	            FlyoutLayoutBehavior = FlyoutLayoutBehavior.Split;
+	        }
 	}
 }
